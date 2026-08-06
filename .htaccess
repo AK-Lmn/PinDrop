@@ -1,0 +1,22 @@
+Options -Indexes
+
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+<IfModule mod_php.c>
+  php_value max_execution_time  60
+  php_value memory_limit        128M
+  php_value output_buffering    Off
+</IfModule>
+
+<Files "scraper.php">
+  Header always set Access-Control-Allow-Origin "*"
+  Header always set Access-Control-Allow-Methods "POST, OPTIONS"
+  Header always set Access-Control-Allow-Headers "Content-Type"
+</Files>
+
+<Files "download.php">
+  Header always set X-Accel-Buffering "no"
+</Files>
