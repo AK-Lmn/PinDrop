@@ -1,0 +1,48 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.3",
+      "maxDuration": 30
+    },
+    "*.php": {
+      "runtime": "vercel-php@0.7.3",
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    {
+      "src": "/scraper.php",
+      "dest": "/api/scraper.php"
+    },
+    {
+      "src": "/download.php",
+      "dest": "/api/download.php"
+    },
+    {
+      "src": "/api/scraper",
+      "dest": "/api/scraper.php"
+    },
+    {
+      "src": "/api/download",
+      "dest": "/api/download.php"
+    },
+    {
+      "src": "/favicon.png",
+      "dest": "/favicon.png"
+    },
+    {
+      "src": "/logo.png",
+      "dest": "/logo.png"
+    },
+    {
+      "src": "/$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
