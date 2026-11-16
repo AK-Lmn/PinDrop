@@ -25,12 +25,8 @@
       "dest": "/api/download.php"
     },
     {
-      "src": "/favicon.png",
-      "dest": "/favicon.png"
-    },
-    {
-      "src": "/logo.png",
-      "dest": "/logo.png"
+      "src": "/(favicon|logo)\\.(png|svg|ico)",
+      "dest": "/$1.$2"
     },
     {
       "src": "/$",

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>PinDrop Logo</title>
+  <defs>
+    <linearGradient id="pindrop-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9d72ff"/>
+      <stop offset="100%" stop-color="#b8a1ec"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#pindrop-grad)" fill-rule="evenodd" d="M63,28 L135,28 C167.033,28 193,53.967 193,86 C193,118.033 167.033,144 135,144 L99,144 L99,206 L81,228 L63,206 Z M115,60 L149,86 L115,112 Z"/>
+</svg>
